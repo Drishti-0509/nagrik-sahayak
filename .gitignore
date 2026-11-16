@@ -1,0 +1,86 @@
+# ==============================================================================
+# Nagrik Sahayak — Root Git Ignore Rules
+# ==============================================================================
+
+# Dependencies (Root, Client, and Server)
+node_modules/
+node_modules
+client/node_modules/
+client/node_modules
+server/node_modules/
+server/node_modules
+
+# Environment files & Local Secrets
+.env
+.env.*
+*.env
+*.env.*
+server/.env
+server/.env.*
+client/.env
+client/.env.*
+.env.local
+.env.*.local
+
+# Explicitly preserve environment templates
+!.env.example
+!server/.env.example
+!client/.env.example
+!*.env.example
+
+# Python Virtual Environments & ML Models (830+ MB)
+ml_env/
+ml_env
+server/ml_env/
+server/ml_env
+venv/
+venv
+.venv/
+.venv
+env/
+env
+server/venv/
+server/venv
+server/.venv/
+server/.venv
+server/env/
+server/env
+
+# Python Bytecode & Caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Build Outputs & Generated Artifacts
+dist/
+dist
+client/dist/
+client/dist
+build/
+build
+coverage/
+coverage
+
+# Logs & Debugging (Node & Python)
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS-Specific Metadata
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE & Editor Configurations
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj

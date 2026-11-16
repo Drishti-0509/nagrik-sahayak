@@ -1,0 +1,24 @@
+{
+  "dataset": {
+    "total_records": 1000,
+    "train_samples": 800,
+    "test_samples": 200
+  },
+  "baseline": {
+    "name": "DummyRegressor (Mean Baseline)",
+    "mae": 18.2,
+    "rmse": 23.37,
+    "r2": -0.005
+  },
+  "model": {
+    "name": "GradientBoostingRegressor Pipeline",
+    "mae": 3.32,
+    "rmse": 4.51,
+    "r2": 0.9625
+  },
+  "evaluation": {
+    "mae_reduction_pct": 81.74,
+    "rmse_reduction_pct": 80.68,
+    "status": "SUPERIOR_TO_BASELINE"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "nagrik-sahayak",
+  "version": "1.0.0",
+  "description": "Nagrik Sahayak - AI-Powered Grievance Redressal System",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "build:client": "npm run build --prefix client",
+    "test:server": "npm test --prefix server",
+    "seed:admin": "node server/src/scripts/initAdmin.js",
+    "seed:demo": "node server/src/scripts/seedData.js"
+  },
+  "keywords": [
+    "grievance-redressal",
+    "public-service",
+    "mern",
+    "gemini-ai",
+    "civic-tech"
+  ],
+  "author": "Nagrik Sahayak Team",
+  "license": "ISC"
+}

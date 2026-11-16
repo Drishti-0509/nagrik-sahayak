@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-800 antialiased;
+  }
+}
+
+/* Custom scrollbars & smooth interactions */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Civic badges and utility styles */
+.civic-card {
+  @apply bg-white border border-slate-200/80 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-200;
+}
+
+.civic-btn-primary {
+  @apply inline-flex items-center justify-center px-4 py-2.5 rounded-lg bg-navy-800 hover:bg-navy-900 text-white font-medium shadow-sm hover:shadow transition-all duration-150 disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.civic-btn-secondary {
+  @apply inline-flex items-center justify-center px-4 py-2.5 rounded-lg bg-teal-600 hover:bg-teal-700 text-white font-medium shadow-sm transition-all duration-150 disabled:opacity-50;
+}
+
+.civic-btn-outline {
+  @apply inline-flex items-center justify-center px-4 py-2.5 rounded-lg border border-slate-300 hover:bg-slate-50 text-slate-700 font-medium transition-all duration-150 disabled:opacity-50;
+}
